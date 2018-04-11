@@ -18,7 +18,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+
 }
 
 header {
@@ -108,7 +108,7 @@ nav a:hover {
   width: 100%;
 }
 
-.card p {
+.card p, .sidebar p {
   font-family: 'PT serif';
 }
 
@@ -134,15 +134,107 @@ nav a:hover {
   display: block;
 }
 
-H2{
+h2 {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
 }
 
+.sidebar h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.searchform {
+  border: 1px solid #000;
+  height: 2rem;
+}
+
+.icon-search {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  outline: none;
+  float: right;
+  width: 2rem;
+  height: 2rem;
+}
+
+.searchform input {
+  float: left;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  width: calc(100% - 2rem);
+  outline: none;
+  padding: 0 .5rem;
+}
+
+.autor img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.autor {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+
+.afiliate img{
+  width: 50%;
+}
+
+footer{
+  clear: both;
+  background: rgb(40, 44, 52);
+  height: 200px;
+}
+
+footer a{
+  color: white;
+  transition: all .5s ease;
+  }
+
+footer a:hover{
+
+}
+
+.socialmedia{
+  float: right;
+  font-size: 30px;
+}
+
+.futtermenu{
+  float: left;
+  font-size: 30px;
+}
+
 @media(min-width: 768px) {
   /*  header{background: green}*/
-  /*  nur für grosser als 768px! */
+  /*  a partir daqui....nur für grosser als 768px! */
+
+footer ul{
+  display: flex;
+}
+
+footer li{
+  margin: 0 .5rem;
+}
+
+footer .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
   .card {
     width: 50%;
     margin: 10px;
@@ -163,7 +255,8 @@ H2{
     margin-right: 0;
   }
   #main {
-    width: 66.666667%;
+    width: 66.66667%;
+    float: left;
   }
   .row {
     display: flex;
@@ -197,5 +290,10 @@ H2{
   }
   h2 {
     text-align: left;
+  }
+  .sidebar {
+    float: right;
+    width: 33.333337%;
+    padding-left: 2rem;
   }
 }
